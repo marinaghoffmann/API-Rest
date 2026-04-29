@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  email     String   @unique
+  password  String
+  name      String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("users")
+}
+
+model Species {
+  id             Int      @id @default(autoincrement())
+  commonName     String   @map("common_name")
+  scientificName String   @unique @map("scientific_name")
+  category       String
+  latitude       Float
+  longitude      Float
+  registeredAt   DateTime @default(now()) @map("registered_at")
+  updatedAt      DateTime @updatedAt @map("updated_at")
+  weatherData    Json?    @map("weather_data")
+
+  @@map("species")
+}
