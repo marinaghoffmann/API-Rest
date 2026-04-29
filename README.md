@@ -136,6 +136,7 @@ src/
   server.js
 .env.example
 .gitignore
+package_collection.json
 package.json
 README.md
 ```
