@@ -2,7 +2,7 @@
 
 API REST para gerenciamento e análise de dados de espécies.
 
-## 🚀 Tecnologias
+## Tecnologias
 
 - **Node.js** + **Express**
 - **PostgreSQL** com **Prisma ORM**
@@ -10,7 +10,7 @@ API REST para gerenciamento e análise de dados de espécies.
 - **OpenWeatherMap API** para dados climáticos
 - **Jest** + **Supertest** para testes
 
-## 📦 Instalação
+## Instalação
 
 ### Pré-requisitos
 
@@ -56,7 +56,7 @@ npm run dev
 npm start
 ```
 
-## 🔑 Autenticação
+## Autenticação
 
 Todas as rotas de espécies exigem autenticação via JWT.
 
@@ -64,7 +64,7 @@ Todas as rotas de espécies exigem autenticação via JWT.
 2. Faça login via `POST /api/auth/login` e obtenha o token
 3. Envie o token no header: `Authorization: Bearer <token>`
 
-## 📌 Endpoints
+## Endpoints
 
 ### Auth
 
@@ -101,14 +101,13 @@ Todas as rotas de espécies exigem autenticação via JWT.
 ### Health Check
 GET /health
 
-## 🧪 Testes
+## Testes
 
 ```bash
 npm test
 ```
 
-## 🗂️ Estrutura do Projeto
-## 🗂️ Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 API-Rest/
@@ -140,3 +139,24 @@ src/
 package.json
 README.md
 ```
+## Demonstração
+
+<details>
+<summary>Ver screenshots</summary>
+
+### Cadastro de usuário
+<img width="1389" height="868" alt="register" src="https://github.com/user-attachments/assets/faf5b482-718a-4d31-86be-86ea7197bd44" />
+
+### Login
+<img width="1389" height="868" alt="login" src="https://github.com/user-attachments/assets/38add0bb-5181-4293-9649-d23b017b15e5" />
+
+### Cadastro de espécie com dados climáticos
+<img width="1389" height="868" alt="especieclimatica" src="https://github.com/user-attachments/assets/f0478584-8f53-46c5-ad51-e9dc21b893da" />
+
+### Listagem de espécies
+<img width="1389" height="868" alt="listagem" src="https://github.com/user-attachments/assets/f7743372-17b3-4cdc-b0ad-419b21bf3af3" />
+
+### Estatísticas por categoria
+<img width="1389" height="868" alt="stats" src="https://github.com/user-attachments/assets/0ed5b640-b187-4b37-9070-71f7fe48bc2e" />
+
+</details>
