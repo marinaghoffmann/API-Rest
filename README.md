@@ -20,8 +20,8 @@ API REST para gerenciamento e análise de dados de espécies.
 ### 1. Clone o repositório
 
 ```bash
-git clone https://github.com/seu-usuario/siapesq-api.git
-cd siapesq-api
+git clone https://github.com/marinaghoffmann/API-Rest
+cd API-Rest
 ```
 
 ### 2. Instale as dependências
