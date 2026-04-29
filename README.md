@@ -108,31 +108,35 @@ npm test
 ```
 
 ## 🗂️ Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
+
+```
 API-Rest/
-├── prisma/
-│   └── schema.prisma
-├── src/
-│   ├── config/
-│   │   └── prisma.js
-│   ├── controllers/
-│   │   ├── authController.js
-│   │   └── speciesController.js
-│   ├── middlewares/
-│   │   ├── auth.js
-│   │   └── errorHandler.js
-│   ├── routes/
-│   │   ├── authRoutes.js
-│   │   └── speciesRoutes.js
-│   ├── services/
-│   │   └── weatherService.js
-│   ├── tests/
-│   │   ├── auth.test.js
-│   │   └── species.test.js
-│   ├── utils/
-│   │   └── AppError.js
-│   ├── app.js
-│   └── server.js
-├── .env.example
-├── .gitignore
-├── package.json
-└── README.md
+prisma/
+  schema.prisma
+src/
+  config/
+    prisma.js
+  controllers/
+    authController.js
+    speciesController.js
+  middlewares/
+    auth.js
+    errorHandler.js
+  routes/
+    authRoutes.js
+    speciesRoutes.js
+  services/
+    weatherService.js
+  tests/
+    auth.test.js
+    species.test.js
+  utils/
+    AppError.js
+  app.js
+  server.js
+.env.example
+.gitignore
+package.json
+README.md
+```
